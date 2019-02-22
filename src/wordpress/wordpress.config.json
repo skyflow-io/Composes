@@ -1,0 +1,20 @@
+{
+  "name": "Wordpress",
+  "description": "The WordPress rich content management system can utilize plugins, widgets, and themes.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "wordpress",
+  "logo": "wordpress.png",
+  "variables": {
+    "port": {
+      "description": "Application port",
+      "value": "8080"
+    }
+  },
+  "update": {
+  }
+}

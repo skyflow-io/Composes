@@ -1,0 +1,36 @@
+{
+  "name": "MongoDB",
+  "description": "Database system. MongoDB document databases provide high availability and easy scalability.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "mongo",
+  "logo": "mongo.png",
+  "variables": {
+    "database_name": {
+      "description": "Database name",
+      "value": "skyflow"
+    },
+    "user": {
+      "description": "Database user",
+      "value": "skyflow"
+    },
+    "password": {
+      "description": "Database password",
+      "value": "root"
+    },
+    "port": {
+      "description": "Application port",
+      "value": "27017"
+    },
+    "database_storage_location": {
+      "description": "Database storage location. Relative to the current directory.",
+      "value": "./skyflow/database/mongo"
+    }
+  },
+  "update": {
+  }
+}

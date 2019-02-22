@@ -1,0 +1,7 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        build: ./eslint
+        image: skyflow/eslint
+        volumes:
+            - ../{{ application_dir }}:/app/src
+            - ./eslint/.eslintrc.js:/app/.eslintrc.js

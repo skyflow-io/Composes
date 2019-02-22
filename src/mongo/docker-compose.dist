@@ -1,0 +1,12 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        image: mongo:latest
+        restart: 'on-failure'
+        environment:
+            MONGODB_USER: {{ user }}
+            MONGODB_PASS: {{ password }}
+            MONGODB_DATABASE: {{ database_name }}
+        ports:
+            - {{ port }}:27017
+        volumes:
+            - ../{{ database_storage_location }}:/data/db

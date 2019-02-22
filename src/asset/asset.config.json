@@ -1,0 +1,24 @@
+{
+  "name": "Assets",
+  "description": "Asset management container with node.js and yarn, to compile all your assets.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "asset",
+  "logo": "asset.png",
+  "variables": {
+    "assets_directory": {
+      "description": "Assets directory. Relative to the current directory.",
+      "value": "./assets"
+    },,
+    "output_directory": {
+      "description": "Output directory. Relative to the current directory.",
+      "value": "./public"
+    }
+  },
+  "update": {
+  }
+}

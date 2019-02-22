@@ -1,0 +1,20 @@
+{
+  "name": "Kibana",
+  "description": "Kibana gives shape to any kind of data \u2014 structured and unstructured \u2014 indexed in Elasticsearch.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "kibana",
+  "logo": "kibana.png",
+  "variables": {
+    "port": {
+      "description": "Application port",
+      "value": "5601"
+    }
+  },
+  "update": {
+  }
+}

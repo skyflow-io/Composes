@@ -1,0 +1,8 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        build: ./jsdoc
+        image: skyflow/jsdoc
+        volumes:
+            - ../{{ application_dir }}:/src
+            - ../{{ output_dir }}:/output
+        command: "yuidoc . -o /output"

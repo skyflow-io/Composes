@@ -1,0 +1,8 @@
+FROM node:alpine
+
+LABEL maintainer="Skyflow - Franck Diomandé <fkdiomande@gmail.com>"
+
+WORKDIR /src
+
+# See http://yui.github.io/yuidoc/
+RUN yarn global add yuidocjs

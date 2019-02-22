@@ -1,0 +1,36 @@
+{
+  "name": "Laravel",
+  "description": "Web server for Laravel application.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "laravel",
+  "logo": "laravel.png",
+  "variables": {
+    "application_name": {
+      "description": "Application name",
+      "value": "laravel_app"
+    },
+    "server_name": {
+      "description": "Your server host name",
+      "value": "localhost"
+    },
+    "server_admin": {
+      "description": "Administrator e-mail",
+      "value": "admin@myapp.com"
+    },
+    "port": {
+      "description": "Application port",
+      "value": "80"
+    }
+  },
+  "update": [
+    {
+      "entry": "Dockerfile.dist",
+      "output": "Dockerfile"
+    }
+  ]
+}

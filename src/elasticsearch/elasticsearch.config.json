@@ -1,0 +1,29 @@
+{
+  "name": "Elasticsearch",
+  "description": "Elasticsearch is a powerful open source search and analytics engine that makes data easy to explore.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "elasticsearch",
+  "logo": "elasticsearch.png",
+  "variables": {
+    "password": {
+      "description": "Environment password",
+      "value": "root"
+    },
+    "port": {
+      "description": "Application port",
+      "value": "9200"
+    },
+    "database_storage_location": {
+      "description": "Database storage location. Relative to the current directory.",
+      "value": "./skyflow/database/elasticsearch"
+    }
+
+  },
+  "update": {
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Redis",
+  "description": "Redis is an open source key-value storage that works as a data structure server.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "redis",
+  "logo": "redis.png",
+  "variables": {
+    "database_storage_location": {
+      "description": "Database storage location. Relative to the current directory.",
+      "value": "./skyflow/database/redis"
+    },
+    "port": {
+      "description": "Application port",
+      "value": "8080"
+    }
+  },
+  "update": {
+  }
+}

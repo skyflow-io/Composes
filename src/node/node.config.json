@@ -1,0 +1,28 @@
+{
+  "name": "Nodejs",
+  "description": "Node.js is a JavaScript-based platform for server-side and networking applications.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "node",
+  "logo": "node.png",
+  "variables": {
+    "application_dir": {
+      "description": "Application directory. Relative to the current directory.",
+      "value": "./"
+    },
+    "env": {
+      "description": "Node environment",
+      "value": "dev"
+    },
+    "port": {
+      "description": "Application port",
+      "value": "8081"
+    }
+  },
+  "update": {
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Symfony",
+  "description": "Web server for Symfony application.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "symfony",
+  "logo": "symfony.png",
+  "variables": {
+    "application_name": {
+      "description": "Application name",
+      "value": "symfony_app"
+    },
+    "server_name": {
+      "description": "Your server host name",
+      "value": "localhost"
+    },
+    "server_admin": {
+      "description": "Administrator e-mail",
+      "value": "admin@myapp.com"
+    },
+    "port": {
+      "description": "Application port",
+      "value": "80"
+    }
+  },
+  "update": {
+    "entry": ["Dockerfile.dist"],
+    "output": ["Dockerfile"]
+  }
+}

@@ -1,0 +1,9 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        image: adminer:latest
+        restart: 'on-failure'
+        environment:
+            ADMINER_PLUGINS: {{ plugins }}
+            ADMINER_DESIGN: {{ design }}
+        ports:
+            - {{ port }}:8080

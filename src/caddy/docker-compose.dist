@@ -1,0 +1,8 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        image: abiosoft/caddy
+        ports:
+          - {{ port }}:2015
+        volumes:
+            - ../:/srv
+            - ./caddy/Caddyfile:/etc/Caddyfile

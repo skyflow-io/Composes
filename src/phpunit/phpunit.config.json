@@ -1,0 +1,22 @@
+{
+  "name": "PhpUnit",
+  "description": "PHPUnit is a programmer-oriented testing framework for PHP.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "phpunit",
+  "logo": "phpunit.png",
+  "variables": {
+    "tests_dir": {
+      "description": "Tests directory. Relative to the current directory.",
+      "value": "./tests"
+    }
+  },
+  "update": {
+    "entry": ["phpunit.xml"],
+    "output": ["../../phpunit.xml"]
+  }
+}

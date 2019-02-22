@@ -1,0 +1,36 @@
+{
+  "name": "Postgres",
+  "description": "Database system. The PostgreSQL object-relational database system provides reliability and data integrity.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "postgres",
+  "logo": "postgres.png",
+  "variables": {
+    "database_name": {
+      "description": "Database name",
+      "value": "skyflow"
+    },
+    "user": {
+      "description": "Database user",
+      "value": "skyflow"
+    },
+    "password": {
+      "description": "Database password",
+      "value": "root"
+    },
+    "database_storage_location": {
+      "description": "Database storage location. Relative to the current directory.",
+      "value": "./skyflow/database/postgres"
+    },
+    "port": {
+      "description": "Application port",
+      "value": "5432"
+    }
+  },
+  "update": {
+  }
+}

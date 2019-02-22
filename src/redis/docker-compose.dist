@@ -1,0 +1,8 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        image: redis:latest
+        restart: 'on-failure'
+        volumes:
+            - ../{{ database_storage_location }}:/data
+        ports:
+            - {{ port }}:6379

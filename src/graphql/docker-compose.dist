@@ -1,0 +1,14 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        build: ./graphql
+        image: skyflow/graphql
+        restart: 'on-failure'
+        volumes:
+            - ./graphql/server.js:/graphql/server.js
+            - ./graphql/schema:/graphql/schema
+        ports:
+            - {{ port }}:80
+        environment:
+            - GRAPHQL_ENV={{ env }}
+            - GRAPHQL_HOST={{ host }}
+            - GRAPHQL_ENDPOINT={{ endpoint }}

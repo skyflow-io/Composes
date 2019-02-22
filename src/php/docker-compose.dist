@@ -1,0 +1,11 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        image: php:7.2-fpm-alpine
+        restart: 'on-failure'
+        working_dir: /app
+        volumes:
+            - ../:/app
+            - ./php/conf/php.ini:/etc/php7/php.ini
+#            - .php/extra/php:/usr/lib/php{{ version }}
+        ports:
+            - {{ port }}:9000

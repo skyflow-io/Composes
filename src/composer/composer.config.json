@@ -1,0 +1,21 @@
+{
+  "name": "Composer",
+  "description": "Composer is a dependency manager written in and for PHP.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "composer",
+  "logo": "composer.png",
+  "variables": {
+    "application_dir": {
+      "description": "Application directory. Relative to the current directory.",
+      "value": "./"
+    }
+
+  },
+  "update": {
+  }
+}

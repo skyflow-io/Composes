@@ -1,0 +1,25 @@
+{
+  "name": "Mailhog",
+  "description": "Mail catcher. Web and API based SMTP testing.",
+  "version": "latest",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "mailhog",
+  "logo": "mailhog.png",
+  "variables": {
+    "smtp_server_port": {
+      "description": "Smtp server port",
+      "value": "1025"
+    },
+    "web_server_port": {
+      "description": "Web server port",
+      "value": "8025"
+    }
+  },
+  "update": {
+  }
+}

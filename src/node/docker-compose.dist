@@ -1,0 +1,11 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        image: node:alpine
+        user: "node"
+        working_dir: /node
+        volumes:
+            - ../{{ application_dir }}:/node
+        environment:
+            - NODE_ENV={{ env }}
+        expose:
+            - {{ port }}

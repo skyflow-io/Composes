@@ -1,0 +1,7 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        build: ./mocha
+        image: skyflow/mocha
+        volumes:
+            - ../{{ application_dir }}:/node
+        command: ["mocha"]

@@ -1,0 +1,23 @@
+{
+  "name": "Eslint",
+  "description": "Eslint is a pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "eslint",
+  "logo": "eslint.png",
+  "variables": {
+    "application_dir": {
+      "description": "Application directory. Relative to the current directory.",
+      "value": "src"
+    }
+
+  },
+  "update": {
+    "entry": ["Dockerfile.dist", "eslintrc.js"],
+    "output": ["Dockerfile", ".eslintrc.js"]
+  }
+}

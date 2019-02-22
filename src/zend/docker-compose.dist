@@ -1,0 +1,12 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        build: ./zend
+        image: skyflow/zend
+        restart: 'on-failure'
+        working_dir: /{{ application_name }}
+        ports:
+            - {{ port }}:80
+        volumes:
+            - ../:/{{ application_name }}
+            - ./symfony/conf/apache2:/etc/apache2
+            - ./symfony/conf/php7/php.ini:/etc/php7/php.ini

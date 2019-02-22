@@ -1,0 +1,26 @@
+{
+  "name": "JsDoc",
+  "description": "YUIDoc is a Node.js application that generates API documentation from comments in source, using a syntax similar to tools like Javadoc and Doxygen.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "jsdoc",
+  "logo": "jsdoc.png",
+  "variables": {
+    "application_dir": {
+      "description": "Application directory. Relative to the current directory.",
+      "value": "src"
+    },
+    "output_dir": {
+      "description": "Output directory. Relative to the current directory.",
+      "value": "out"
+    }
+  },
+  "update": {
+    "entry": ["Dockerfile.dist"],
+    "output": ["Dockerfile"]
+  }
+}

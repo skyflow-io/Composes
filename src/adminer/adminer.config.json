@@ -1,0 +1,30 @@
+{
+  "name": "Adminer",
+  "description": "Database management in a single PHP file.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "adminer",
+  "logo": "adminer.png",
+  "variables": {
+    "plugins": {
+      "description": "Use some plugins",
+      "value": "tables-filter tinymce"
+    },
+    "design": {
+      "description": "Application design",
+      "value": "pepa-linha"
+    },
+    "port": {
+      "description": "Application port",
+      "value": "8080"
+    }
+
+  },
+  "update": {
+  }
+
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Python",
+  "description": "Python is a scripting shell language, object oriented.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "python",
+  "logo": "python.png",
+  "variables": {
+    "application_name": {
+      "description": "Application name",
+      "value": "app"
+    },
+    "entry_point": {
+      "description": "Entry point",
+      "value": "index.py"
+    }
+  },
+  "update": {
+  }
+}

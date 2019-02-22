@@ -1,0 +1,36 @@
+{
+  "name": "Mariadb",
+  "description": "Database system. MariaDB is a community-developed fork of MySQL intended to remain free under the GNU GPL.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "mariadb",
+  "logo": "mariadb.png",
+  "variables": {
+    "database_name": {
+      "description": "Database name",
+      "value": "skyflow"
+    },
+    "user": {
+      "description": "Database user",
+      "value": "skyflow"
+    },
+    "password": {
+      "description": "Database password",
+      "value": "root"
+    },
+    "root_password": {
+      "description": "Database root password",
+      "value": "root"
+    },
+    "database_storage_location": {
+      "description": "Database storage location. Relative to the current directory.",
+      "value": "./skyflow/database/mariadb"
+    }
+  },
+  "update": {
+  }
+}

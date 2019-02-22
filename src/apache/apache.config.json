@@ -1,0 +1,21 @@
+{
+  "name": "Apache",
+  "description": "Apache HTTP Server.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "apache",
+  "logo": "apache.png",
+  "variables": {
+    "port": {
+      "description": "Application port",
+      "value": "80"
+    }
+
+  },
+  "update": {
+  }
+}

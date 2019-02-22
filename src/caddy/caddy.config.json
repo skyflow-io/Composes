@@ -1,0 +1,21 @@
+{
+  "name": "Caddy",
+  "description": "Caddy is the HTTP/2 web server with automatic HTTPS.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "caddy",
+  "logo": "caddy.png",
+  "variables": {
+    "port": {
+      "description": "Application port",
+      "value": "2015"
+    }
+
+  },
+  "update": {
+  }
+}

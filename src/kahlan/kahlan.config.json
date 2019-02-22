@@ -1,0 +1,20 @@
+{
+  "name": "Kahlan",
+  "description": "PHP Test Framework for Freedom, Truth, and Justice.",
+  "author": {
+    "name": "Skyflow",
+    "email": "contact@skyflow.io",
+    "site": "https:\/\/skyflow.io",
+    "github": "https:\/\/github.com\/skyflow-io"
+  },
+  "slug": "kahlan",
+  "logo": "kahlan.png",
+  "variables": {
+    "application_dir": {
+      "description": "Application directory. Relative to the current directory.",
+      "value": "./"
+    }
+  },
+  "update": {
+  }
+}

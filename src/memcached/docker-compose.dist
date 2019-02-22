@@ -1,0 +1,6 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        image: memcached:alpine
+        restart: 'on-failure'
+        ports:
+            - {{ port }}:11211
