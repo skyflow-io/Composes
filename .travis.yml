@@ -23,17 +23,3 @@ deploy:
   script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/composes.json lewebpedagogique@51.15.187.88:/srv/http/skyflow/data/composes.json
   on:
     branch: master
-after_deploy:
-  - ssh lewebpedagogique@51.15.187.88 "
-    docker login registry.gitlab.com -u $GITLAB_CI_USERNAME -p $GITLAB_CI_PWD &&
-    docker rm -f skyflow_api_v2 && docker rm -f skyflow_api_v2_dev &&
-
-    docker run --name skyflow_api_v2_dev --restart=on-failure:10 -d -p 4801:80
-    -e 'GRAPHQL_ENV=dev' -e 'GRAPHQL_HOST=localhost' -e 'GRAPHQL_ENDPOINT=/'
-    -v /srv/http/skyflow/data:/api/data registry.gitlab.com/skyflow/api &&
-
-    docker run --name skyflow_api_v2 --restart=on-failure:10 -d -p 4800:80
-    -e 'GRAPHQL_ENV=prod' -e 'GRAPHQL_HOST=localhost' -e 'GRAPHQL_ENDPOINT=/'
-    -v /srv/http/skyflow/data:/api/data registry.gitlab.com/skyflow/api
-
-  "
