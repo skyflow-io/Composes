@@ -11,7 +11,7 @@
   "logo": "adminer.png",
   "variables": {
     "plugins": {
-      "description": "Use some plugins",
+      "description": "Define your plugins",
       "value": "tables-filter tinymce"
     },
     "design": {
