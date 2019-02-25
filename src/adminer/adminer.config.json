@@ -22,9 +22,5 @@
       "description": "Application port",
       "value": "8080"
     }
-
-  },
-  "update": {
   }
-
 }

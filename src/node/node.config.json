@@ -22,7 +22,5 @@
       "description": "Application port",
       "value": "8081"
     }
-  },
-  "update": {
   }
 }

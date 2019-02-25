@@ -18,7 +18,5 @@
       "description": "Entry point",
       "value": "index.py"
     }
-  },
-  "update": {
   }
 }

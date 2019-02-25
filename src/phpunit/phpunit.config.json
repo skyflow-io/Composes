@@ -15,8 +15,10 @@
       "value": "./tests"
     }
   },
-  "update": {
-    "entry": ["phpunit.xml"],
-    "output": ["../../phpunit.xml"]
-  }
+  "update": [
+    {
+      "entry": "phpunit.xml",
+      "output": "../../phpunit.xml"
+    }
+  ]
 }

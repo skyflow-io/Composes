@@ -27,8 +27,10 @@
       "value": "80"
     }
   },
-  "update": {
-    "entry": ["Dockerfile.dist"],
-    "output": ["Dockerfile"]
-  }
+  "update": [
+    {
+      "entry": "Dockerfile.dist",
+      "output": "Dockerfile"
+    }
+  ]
 }

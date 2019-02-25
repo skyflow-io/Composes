@@ -30,7 +30,5 @@
       "description": "Database storage location. Relative to the current directory.",
       "value": "./skyflow/database/mariadb"
     }
-  },
-  "update": {
   }
 }

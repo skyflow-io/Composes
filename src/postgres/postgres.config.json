@@ -30,7 +30,5 @@
       "description": "Application port",
       "value": "5432"
     }
-  },
-  "update": {
   }
 }

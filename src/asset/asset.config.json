@@ -13,12 +13,10 @@
     "assets_directory": {
       "description": "Assets directory. Relative to the current directory.",
       "value": "./assets"
-    },,
+    },
     "output_directory": {
       "description": "Output directory. Relative to the current directory.",
       "value": "./public"
     }
-  },
-  "update": {
   }
 }

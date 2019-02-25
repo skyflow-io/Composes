@@ -14,10 +14,15 @@
       "description": "Application directory. Relative to the current directory.",
       "value": "src"
     }
-
   },
-  "update": {
-    "entry": ["Dockerfile.dist", "eslintrc.js"],
-    "output": ["Dockerfile", ".eslintrc.js"]
-  }
+  "update": [
+    {
+      "entry": "Dockerfile.dist",
+      "output": "Dockerfile"
+    },
+    {
+      "entry": "eslintrc.js",
+      "output": ".eslintrc.js"
+    }
+  ]
 }

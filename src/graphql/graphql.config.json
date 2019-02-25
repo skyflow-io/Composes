@@ -27,8 +27,10 @@
       "value": "dev"
     }
   },
-  "update": {
-    "entry": ["Dockerfile.dist"],
-    "output": ["Dockerfile"]
-  }
+  "update": [
+    {
+      "entry": "Dockerfile.dist",
+      "output": "Dockerfile"
+    }
+  ]
 }

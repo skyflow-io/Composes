@@ -1,0 +1,25 @@
+language: sh
+sudo: required
+git:
+  depth: 1
+  submodules: false
+services:
+- docker
+addons:
+  ssh_known_hosts: 51.15.187.88
+
+before_script:
+- docker run --rm --volume $TRAVIS_BUILD_DIR:/app composer:latest bash -c "composer require symfony/filesystem symfony/finder"
+script:
+- docker run --rm -v $TRAVIS_BUILD_DIR:/app -w /app php:7.3-rc-cli-alpine sh -c "php ci/build.php"
+before_deploy:
+- openssl aes-256-cbc -K $encrypted_e5fbfe740c5d_key -iv $encrypted_e5fbfe740c5d_iv -in ci/deploy_rsa.enc -out deploy_rsa -d
+- eval "$(ssh-agent -s)"
+- chmod 600 deploy_rsa
+- ssh-add deploy_rsa
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/composes.json lewebpedagogique@51.15.187.88:/srv/http/skyflow/data/composes.json
+  on:
+    branch: master
