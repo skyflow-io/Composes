@@ -18,8 +18,9 @@ foreach ($composeFinder as $compose) {
     $name = $compose->getBasename();
 
     $files = [
-        'name' => $name,
-        'files' => []
+        'files' => [
+            'name' => $name,
+        ]
     ];
 
     $filesFinder = new Finder();
