@@ -1,7 +1,7 @@
     {{ container_name }}:
         container_name: {{ container_name }}
-        build: ./jsdoc
-        image: skyflow/jsdoc
+        build: ./yuidocjs
+        image: skyflow/yuidocjs
         volumes:
             - ../{{ application_dir }}:/src
             - ../{{ output_dir }}:/output

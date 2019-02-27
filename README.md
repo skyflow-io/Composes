@@ -24,7 +24,7 @@ Coming soon 😀
 
 ## License
 
-Skyflow-cli is [Apache licensed](LICENSE).
+Skyflow Composes is [Apache licensed](LICENSE).
 
 [website-url]: https://skyflow.io
 [slack-url]: https://join.slack.com/t/skyflow-cli/shared_invite/enQtNDg4MDIyODQ3Njg0LWYwMTUxZGM3NmQ3MGJhZTA3MDAzNTcwYWM2MzFjNzZmNzAzOWUxZjQ1YTkwMjVkNzU1NjUyMmM2Yjc1ZDI3NzQ
