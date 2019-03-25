@@ -18,8 +18,11 @@ before_deploy:
 - chmod 600 deploy_rsa
 - ssh-add deploy_rsa
 deploy:
-  provider: script
-  skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/composes.json lewebpedagogique@51.15.187.88:/srv/http/skyflow/data/composes.json
-  on:
-    branch: master
+  - provider: script
+    skip_cleanup: true
+    script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/composes.json lewebpedagogique@51.15.187.88:/srv/http/skyflow/data/composes.json
+    on:
+      branch: master
+  - provider: script
+    skip_cleanup: true
+    script: rsync -r --quiet $TRAVIS_BUILD_DIR/public lewebpedagogique@51.15.187.88:/srv/http/skyflow/composes/public && rsync -r --quiet $TRAVIS_BUILD_DIR/templates lewebpedagogique@51.15.187.88:/srv/http/skyflow/composes/templates
