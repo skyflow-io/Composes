@@ -26,3 +26,5 @@ deploy:
   - provider: script
     skip_cleanup: true
     script: rsync -r --quiet $TRAVIS_BUILD_DIR/public lewebpedagogique@51.15.187.88:/srv/http/skyflow/composes/public && rsync -r --quiet $TRAVIS_BUILD_DIR/templates lewebpedagogique@51.15.187.88:/srv/http/skyflow/composes/templates
+    on:
+      branch: master
