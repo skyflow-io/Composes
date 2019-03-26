@@ -5,8 +5,8 @@ git:
   submodules: false
 services:
 - docker
-addons:
-  ssh_known_hosts: 51.15.187.88
+#addons:
+#  ssh_known_hosts: 51.15.187.88
 before_script:
 - docker run --rm --volume $TRAVIS_BUILD_DIR:/app composer:latest bash -c "composer require symfony/filesystem symfony/finder"
 script:
