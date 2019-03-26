@@ -8,6 +8,7 @@ use Symfony\Component\Finder\Finder;
 $fileSystem = new Filesystem();
 
 $result = [];
+$docResult = [];
 
 $composeFinder = new Finder();
 
@@ -27,15 +28,27 @@ foreach ($composeFinder as $compose) {
 
     foreach ($filesFinder as $file) {
 
+        $filename = $file->getFilename();
+
         $files['files'][] = [
             'directory' => $file->getRelativePath(),
-            'filename' => $file->getFilename(),
+            'filename' => $filename,
             'contents' => $file->getContents(),
         ];
+
+        if($filename === ($name . '.config.json')){
+            $doc = json_decode($file->getContents(), true);
+            $docResult[] = [
+                'name'=> $doc['name'],
+                'description'=> $doc['description'],
+                'author'=> $doc['author']['name'],
+            ];
+        }
 
     }
 
     $result[] = $files;
 }
 
-$fileSystem->appendToFile('/app/composes.json', json_encode($result));
+$fileSystem->appendToFile('/app/data/composes.json', json_encode($result));
+$fileSystem->appendToFile('/app/doc/composes.json', json_encode($docResult));
