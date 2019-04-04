@@ -26,3 +26,5 @@ deploy:
       rsync -avz $TRAVIS_BUILD_DIR/public $TRAVIS_BUILD_DIR/templates lewebpedagogique@51.15.187.88:/srv/http/skyflow/composes
     on:
       branch: master
+notifications:
+  webhooks: https://skyflow-travis-telegram-bot.herokuapp.com/
