@@ -7,16 +7,26 @@
     "site": "https:\/\/skyflow.io",
     "github": "https:\/\/github.com\/skyflow-io"
   },
-  "slug": "asset",
-  "logo": "asset.png",
+  "slug": "assets",
+  "logo": "assets.png",
   "variables": {
     "assets_directory": {
       "description": "Assets directory. Relative to the current directory.",
-      "value": "./assets"
+      "value": "assets"
     },
     "output_directory": {
       "description": "Output directory. Relative to the current directory.",
-      "value": "./public"
+      "value": "public"
     }
+  },
+  "update": [
+    {
+      "entry": "Dockerfile.dist",
+      "output": "Dockerfile"
+    }
+  ],
+  "events": {
+    "add": "events/AddEvent",
+    "update": "events/UpdateEvent"
   }
 }

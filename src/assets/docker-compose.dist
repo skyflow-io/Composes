@@ -1,0 +1,7 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        build: ./assets
+        image: skyflow/assets
+        volumes:
+            - ../{{ assets_directory }}:/assets/src
+            - ../{{ output_directory }}:/assets/out

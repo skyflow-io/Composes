@@ -1,7 +1,0 @@
-    {{ container_name }}:
-        container_name: {{ container_name }}
-        image: node:alpine
-        working_dir: /var/www/assets
-        volumes:
-            - ../{{ assets_directory }}:/var/www/assets
-            - ../{{ output_directory }}:/var/www/public
