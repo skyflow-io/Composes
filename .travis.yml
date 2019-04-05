@@ -27,4 +27,15 @@ deploy:
     on:
       branch: master
 notifications:
+  email: false
+  slack:
+    rooms:
+      - secure: FeQdsvIC+VrlcgAyABi124yWS62yp9nUBD5mYHb2bS4PXPwyf8Vv9YSfWHMPawYWBsCK6k9sx8LwW/TH03auBYgkkcGzZVcAjMiwhaH0AjwJmZ5l+5csWBOInOdMexNI/23rajSIdkj1LEGJ6atuHbLH6JpQU832mErolZIpljP2KGIBjdCZ6ldqlI6e2Z62JLWqgrz106SSjcMBHVPuq6qEJcxwRhGpZRbhpSG/GyrrYvTQZzODAA0s4iCm+wIe28VBRJVDDvoBWsCxuYU3EiI9CxMfdvIttyFQaR1odZv8CNA+xgzZ4HN48uw6PY9Li5wce0Gp5709/4xSt4uRVdi5227KyIpbHlohGXVGmYNM9lbxdtuhYSyXNAKhABLO9t5BlaMwa9vLyajr1fVyzoUfSV/q7Cbc1acnVk6UfanAhkULpvlJdQDvGnJRs+GO/drAMSmAB9SAjspY/BENP0LlWAGzzd9Z8eJ9LjVb9pQ7ksNbsxURLkVg8T1W5hM2KBqH7+Ds1Y4UJDURPoOmEaK4d8MKwhlPhSuEwFQ5T5z+SIZMZ5rhj5Nzrq2WCOrokgbPzpwL3065m7g1bTtnICouJNtNgLqJ7VqL/2DAtIMXvKuIEF/cleorDQeEUnWMgNJ2FJRb7hqxmM29y/ebAQoUcWWCtx310o9Hyhhu0o0=
+    on_success: always
+    on_failure: always
+    template:
+      - "*%{commit_message}*"
+      - "Repo `%{repository_slug}` *%{result}* build (<%{build_url}|#%{build_number}>) for commit (<%{compare_url}|%{commit}>) on branch `%{branch}`."
+      - "Execution time: *%{duration}*"
+      - "Message: %{message}"
   webhooks: https://skyflow-travis-telegram-bot.herokuapp.com/
