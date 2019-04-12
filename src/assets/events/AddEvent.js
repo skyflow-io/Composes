@@ -2,7 +2,7 @@ const {resolve} = require("path");
 
 module.exports = class AddEvent {
 
-    constructor(container) {
+    constructor(container, UpdateCommand) {
         const {Shell, config} = container;
         let currentDockerDir = resolve(process.cwd(), config.value.docker.directory);
         let compose = 'assets';
