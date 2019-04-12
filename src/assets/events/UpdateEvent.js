@@ -13,6 +13,7 @@ module.exports = class UpdateEvent {
             Shell.mkdir('-p', variables['assets_directory'].value);
             Shell.cp('-R', resolve(cacheComposeDir, 'entry.js'), resolve(variables['assets_directory'].value, 'entry.js'));
         } catch (e) {}
+
     }
 
 };
