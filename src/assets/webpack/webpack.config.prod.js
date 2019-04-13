@@ -1,6 +1,6 @@
 const path = require('path'), resolve = path.resolve,
     MiniCssExtractPlugin = require("mini-css-extract-plugin"),
-    CleanWebpackPlugin = require('clean-webpack-plugin'),
+    // CleanWebpackPlugin = require('clean-webpack-plugin'),
     UglifyJsPlugin = require("uglifyjs-webpack-plugin"),
     OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
@@ -79,9 +79,9 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(['out'], {
-            root: resolve(__dirname, '..')
-        }),
+        // new CleanWebpackPlugin(['out'], {
+        //     root: resolve(__dirname, '..')
+        // }),
         new MiniCssExtractPlugin('[name].css')
     ]
 };

@@ -2,9 +2,8 @@ FROM node:alpine
 LABEL maintainer="Skyflow"
 RUN mkdir -p /assets/src /assets/out
 COPY ./webpack /assets/webpack
-COPY ./webpack /assets/webpack
 WORKDIR /assets
 RUN npm install @babel/core @babel/preset-env @babel/preset-react babel-loader babel-polyfill react react-dom
-RUN npm install -D sass-loader css-loader file-loader style-loader node-sass \
+RUN npm install -D sass-loader css-loader file-loader style-loader node-sass webpack-cli webpack \
  clean-webpack-plugin optimize-css-assets-webpack-plugin uglifyjs-webpack-plugin mini-css-extract-plugin
-RUN npm install webpack-cli webpack -g
+# RUN npm install webpack-cli webpack -g
