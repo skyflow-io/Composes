@@ -13,6 +13,10 @@
     "port": {
       "description": "Application port",
       "value": "5601"
+    },
+    "config_storage_location": {
+      "description": "Configuration storage location. Relative to the current directory.",
+      "value": "./skyflow/config/kibana"
     }
   }
 }
