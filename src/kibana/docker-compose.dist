@@ -1,12 +1,12 @@
     {{ container_name }}:
         container_name: {{ container_name }}
         # see https://www.docker.elastic.co/
-        # see https://www.elastic.co/guide/en/kibana/6.7/docker.html
-        image: docker.elastic.co/kibana/kibana:6.7.1
+        # see https://www.elastic.co/guide/en/kibana/6.6/docker.html
+        image: docker.elastic.co/kibana/kibana:6.6.2
         restart: 'on-failure'
-        #environment:
-            #ELASTICSEARCH_URL: http://elasticsearch_container_name:9200
+        environment:
+            ELASTICSEARCH_URL: http://{{ elasticsearch:container_name }}:9200
         ports:
             - {{ port }}:5601
         volumes:
-            - ../{{ config_storage_location }}/kibana.yml:/usr/share/kibana/config/kibana.yml
+            - ./kibana/config:/usr/share/kibana/config

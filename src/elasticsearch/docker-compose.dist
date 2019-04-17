@@ -16,4 +16,7 @@
         ports:
             - {{ port }}:9200
         volumes:
-            - ../{{ database_storage_location }}:/usr/share/elasticsearch/data
+            - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+            - ./elasticsearch/config/jvm.options:/usr/share/elasticsearch/config/jvm.options
+            - ./elasticsearch/config/log4j2.properties:/usr/share/elasticsearch/config/log4j2.properties
+#            - ../{{ database_storage_location }}:/usr/share/elasticsearch/data
