@@ -5,7 +5,7 @@ module.exports = class UpdateEvent {
     constructor(container) {
         const {Shell, File, config, cache} = container;
         let compose = 'assets';
-        let cacheComposeDir = resolve(cache.compose, compose);
+        let cacheComposeDir = resolve(cache.compose, 'data', compose);
         try {
             let variables = config.value.docker.composes[compose].variables;
             config.value.assets.directory = variables['assets_directory'].value;
