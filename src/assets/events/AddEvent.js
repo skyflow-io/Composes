@@ -12,6 +12,7 @@ module.exports = class AddEvent {
         }catch (e) {}
         container.Request.command = 'update';
         container.Request.consoleArguments = ['assets'];
+        container.Request.addOption('y', true);
         container.Request.commands = [container.Request.command, ...container.Request.consoleArguments ];
         new UpdateCommand(container);
     }

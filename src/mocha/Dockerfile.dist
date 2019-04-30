@@ -1,6 +1,6 @@
 FROM node:alpine
 
-LABEL maintainer="Skyflow - Franck Diomandé <fkdiomande@gmail.com>"
+LABEL maintainer="Skyflow"
 
 WORKDIR /node
 
