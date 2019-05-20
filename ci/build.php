@@ -4,7 +4,7 @@ require __DIR__.'/../vendor/autoload.php';
 
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
-use \Colors\RandomColor;
+use ColorThief\ColorThief;
 
 $fileSystem = new Filesystem();
 $result = [];
@@ -30,10 +30,12 @@ foreach ($composeFinder as $compose) {
         ];
         if($filename === ($name . '.config.json')){
             $doc = json_decode($file->getContents(), true);
-            $doc['color'] = strtoupper(RandomColor::one());
-            $doc['logo'] = 'default.svg';
+            $doc['logo'] = 'default.png';
             if($fileSystem->exists('public/images/' . $doc['slug'] . '.png')){
                 $doc['logo'] = $doc['slug'] . '.png';
+            }
+            if(!$doc['color'] && $doc['logo']){
+                $doc['color'] = ColorThief::getColor('public/images/' . $doc['logo']);
             }
             $docResult[] = $doc;
         }
