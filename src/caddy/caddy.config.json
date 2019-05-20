@@ -8,7 +8,6 @@
     "github": "https:\/\/github.com\/skyflow-io"
   },
   "slug": "caddy",
-  "logo": "caddy.png",
   "variables": {
     "port": {
       "description": "Application port",

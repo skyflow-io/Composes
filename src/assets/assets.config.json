@@ -8,7 +8,6 @@
     "github": "https:\/\/github.com\/skyflow-io"
   },
   "slug": "assets",
-  "logo": "assets.png",
   "variables": {
     "assets_directory": {
       "description": "Assets directory. Relative to the current directory.",

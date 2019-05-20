@@ -8,7 +8,6 @@
     "github": "https:\/\/github.com\/skyflow-io"
   },
   "slug": "python",
-  "logo": "python.png",
   "variables": {
     "application_name": {
       "description": "Application name",

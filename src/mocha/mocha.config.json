@@ -8,7 +8,6 @@
     "github": "https:\/\/github.com\/skyflow-io"
   },
   "slug": "mocha",
-  "logo": "mocha.png",
   "variables": {
     "application_dir": {
       "description": "Application directory",

@@ -8,7 +8,6 @@
     "github": "https:\/\/github.com\/skyflow-io"
   },
   "slug": "postgres",
-  "logo": "postgres.png",
   "variables": {
     "database_name": {
       "description": "Database name",

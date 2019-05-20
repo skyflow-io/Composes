@@ -1,5 +1,5 @@
 {
-  "name": "Php",
+  "name": "PHP",
   "description": "While designed for web development, the PHP scripting language also provides general-purpose use.",
   "author": {
     "name": "Skyflow",
@@ -8,7 +8,6 @@
     "github": "https:\/\/github.com\/skyflow-io"
   },
   "slug": "php",
-  "logo": "php.png",
   "variables": {
     "port": {
       "description": "Application port",

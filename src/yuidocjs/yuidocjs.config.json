@@ -8,7 +8,6 @@
     "github": "https:\/\/github.com\/skyflow-io"
   },
   "slug": "yuidocjs",
-  "logo": "yuidocjs.png",
   "variables": {
     "application_dir": {
       "description": "Application directory. Relative to the current directory.",

@@ -8,7 +8,6 @@
     "github": "https:\/\/github.com\/skyflow-io"
   },
   "slug": "elasticsearch",
-  "logo": "elasticsearch.png",
   "variables": {
     "password": {
       "description": "Environment password",

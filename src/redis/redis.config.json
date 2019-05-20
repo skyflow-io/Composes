@@ -8,7 +8,6 @@
     "github": "https:\/\/github.com\/skyflow-io"
   },
   "slug": "redis",
-  "logo": "redis.png",
   "variables": {
     "database_storage_location": {
       "description": "Database storage location. Relative to the current directory.",

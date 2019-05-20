@@ -8,7 +8,6 @@
     "github": "https:\/\/github.com\/skyflow-io"
   },
   "slug": "adminer",
-  "logo": "adminer.png",
   "variables": {
     "plugins": {
       "description": "Define your plugins",

@@ -9,7 +9,6 @@
     "github": "https:\/\/github.com\/skyflow-io"
   },
   "slug": "mailhog",
-  "logo": "mailhog.png",
   "variables": {
     "smtp_server_port": {
       "description": "Smtp server port",

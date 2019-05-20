@@ -8,7 +8,6 @@
     "github": "https:\/\/github.com\/skyflow-io"
   },
   "slug": "kahlan",
-  "logo": "kahlan.png",
   "variables": {
     "application_dir": {
       "description": "Application directory. Relative to the current directory.",

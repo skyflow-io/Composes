@@ -8,7 +8,6 @@
     "github": "https:\/\/github.com\/skyflow-io"
   },
   "slug": "graphql",
-  "logo": "graphql.png",
   "variables": {
     "host": {
       "description": "Host name",

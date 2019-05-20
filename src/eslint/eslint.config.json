@@ -8,7 +8,6 @@
     "github": "https:\/\/github.com\/skyflow-io"
   },
   "slug": "eslint",
-  "logo": "eslint.png",
   "variables": {
     "application_dir": {
       "description": "Application directory. Relative to the current directory.",

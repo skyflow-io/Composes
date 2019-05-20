@@ -8,7 +8,6 @@
     "github": "https:\/\/github.com\/skyflow-io"
   },
   "slug": "mongo",
-  "logo": "mongo.png",
   "variables": {
     "database_name": {
       "description": "Database name",

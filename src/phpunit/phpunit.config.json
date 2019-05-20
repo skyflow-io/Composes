@@ -8,7 +8,6 @@
     "github": "https:\/\/github.com\/skyflow-io"
   },
   "slug": "phpunit",
-  "logo": "phpunit.png",
   "variables": {
     "tests_dir": {
       "description": "Tests directory. Relative to the current directory.",
