@@ -20,7 +20,7 @@ deploy:
   - provider: script
     skip_cleanup: true
     script:
-      ssh lewebpedagogique@51.15.187.88 mkdir -p /srv/http/skyflow/data /srv/http/skyflow/doc && /srv/http/skyflow/images &&
+      ssh lewebpedagogique@51.15.187.88 mkdir -p /srv/http/skyflow/data /srv/http/skyflow/doc /srv/http/skyflow/images &&
       rsync -r --delete-after $TRAVIS_BUILD_DIR/doc/composes.json lewebpedagogique@51.15.187.88:/srv/http/skyflow/doc/composes.json &&
       rsync -r --delete-after $TRAVIS_BUILD_DIR/data/composes.json lewebpedagogique@51.15.187.88:/srv/http/skyflow/data/composes.json &&
       rsync -rtv $TRAVIS_BUILD_DIR/public/images lewebpedagogique@51.15.187.88:/srv/http/skyflow/images/composes
