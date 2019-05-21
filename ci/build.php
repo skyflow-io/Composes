@@ -35,7 +35,8 @@ foreach ($composeFinder as $compose) {
                 $doc['logo'] = $doc['slug'] . '.png';
             }
             if(!$doc['color'] && $doc['logo']){
-                $doc['color'] = ColorThief::getColor('public/images/' . $doc['logo']);
+                $color = ColorThief::getColor('public/images/' . $doc['logo']);
+                $doc['color'] = strtoupper(sprintf("#%02x%02x%02x", $color[0], $color[1], $color[2]));
             }
             $docResult[] = $doc;
         }

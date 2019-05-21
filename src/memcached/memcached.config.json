@@ -13,5 +13,6 @@
       "description": "Application port",
       "value": "11211"
     }
-  }
+  },
+  "color": "#298D83"
 }
