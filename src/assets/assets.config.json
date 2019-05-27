@@ -1,6 +1,6 @@
 {
   "name": "Assets",
-  "description": "Asset management container with node.js and yarn, to compile all your assets.",
+  "description": "Asset management container with node.js and yarn, to compile your assets. This compose uses Webpack.",
   "author": {
     "name": "Skyflow",
     "email": "contact@skyflow.io",

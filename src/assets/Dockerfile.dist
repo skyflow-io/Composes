@@ -5,4 +5,3 @@ COPY ./webpack /assets/webpack
 COPY ./package.json /assets/package.json
 WORKDIR /assets
 RUN npm install
-RUN npm audit fix
