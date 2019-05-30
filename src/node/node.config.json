@@ -3,9 +3,8 @@
   "description": "Node.js is a JavaScript-based platform for server-side and networking applications.",
   "author": {
     "name": "Skyflow",
-    "email": "contact@skyflow.io",
     "site": "https:\/\/skyflow.io",
-    "github": "https:\/\/github.com\/skyflow-io"
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/adminer"
   },
   "slug": "node",
   "variables": {

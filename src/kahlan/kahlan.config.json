@@ -3,9 +3,8 @@
   "description": "PHP Test Framework for Freedom, Truth, and Justice.",
   "author": {
     "name": "Skyflow",
-    "email": "contact@skyflow.io",
     "site": "https:\/\/skyflow.io",
-    "github": "https:\/\/github.com\/skyflow-io"
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/kahlan"
   },
   "slug": "kahlan",
   "variables": {

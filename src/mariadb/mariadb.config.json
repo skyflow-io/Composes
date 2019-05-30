@@ -3,9 +3,8 @@
   "description": "Database system. MariaDB is a community-developed fork of MySQL intended to remain free under the GNU GPL.",
   "author": {
     "name": "Skyflow",
-    "email": "contact@skyflow.io",
     "site": "https:\/\/skyflow.io",
-    "github": "https:\/\/github.com\/skyflow-io"
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/mariadb"
   },
   "slug": "mariadb",
   "variables": {

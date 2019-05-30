@@ -1,5 +1,5 @@
     {{ container_name }}:
         container_name: {{ container_name }}
-        image: composer:latest
+        image: composer
         volumes:
             - ../{{ application_dir }}:/app

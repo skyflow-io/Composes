@@ -1,5 +1,5 @@
     {{ container_name }}:
         container_name: {{ container_name }}
-        image: phpunit/phpunit:latest
+        image: phpunit/phpunit
         volumes:
             - ../:/app

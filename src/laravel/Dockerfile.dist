@@ -1,5 +1,5 @@
-FROM alpine:latest
-LABEL maintainer="Skyflow"
+FROM alpine
+LABEL maintainer="Skyflow - Franck DIOMANDE <fkdiomande@gmail.com>"
 ARG APPLICATION_NAME={{ application_name }}
 ARG SERVER_NAME={{ server_name }}
 ARG SERVER_ADMIN={{ server_admin }}

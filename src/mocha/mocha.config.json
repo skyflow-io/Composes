@@ -3,9 +3,8 @@
   "description": "Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun.",
   "author": {
     "name": "Skyflow",
-    "email": "contact@skyflow.io",
     "site": "https:\/\/skyflow.io",
-    "github": "https:\/\/github.com\/skyflow-io"
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/mocha"
   },
   "slug": "mocha",
   "variables": {

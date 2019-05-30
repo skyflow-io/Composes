@@ -1,6 +1,6 @@
     {{ container_name }}:
         container_name: {{ container_name }}
-        image: redis:latest
+        image: redis
         restart: 'on-failure'
         volumes:
             - ../{{ database_storage_location }}:/data

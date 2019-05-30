@@ -1,5 +1,5 @@
 FROM node:alpine
-LABEL maintainer="Skyflow"
+LABEL maintainer="Skyflow - Franck DIOMANDE <fkdiomande@gmail.com>"
 WORKDIR /graphql
 RUN npm init -y
 RUN yarn add express express-graphql graphql cors lodash vhost

@@ -4,9 +4,8 @@
   "version": "latest",
   "author": {
     "name": "Skyflow",
-    "email": "contact@skyflow.io",
     "site": "https:\/\/skyflow.io",
-    "github": "https:\/\/github.com\/skyflow-io"
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/mailhog"
   },
   "slug": "mailhog",
   "variables": {

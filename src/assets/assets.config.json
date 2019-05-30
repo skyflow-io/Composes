@@ -3,9 +3,8 @@
   "description": "Asset management container with node.js and yarn, to compile your assets. This compose uses Webpack.",
   "author": {
     "name": "Skyflow",
-    "email": "contact@skyflow.io",
     "site": "https:\/\/skyflow.io",
-    "github": "https:\/\/github.com\/skyflow-io"
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/assets"
   },
   "slug": "assets",
   "variables": {

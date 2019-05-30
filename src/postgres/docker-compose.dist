@@ -1,6 +1,6 @@
     {{ container_name }}:
         container_name: {{ container_name }}
-        image: postgres:latest
+        image: postgres:alpine
         restart: 'on-failure'
         ports:
             - {{ port }}:5432

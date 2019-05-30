@@ -3,9 +3,8 @@
   "description": "Elasticsearch is a powerful open source search and analytics engine that makes data easy to explore.",
   "author": {
     "name": "Skyflow",
-    "email": "contact@skyflow.io",
     "site": "https:\/\/skyflow.io",
-    "github": "https:\/\/github.com\/skyflow-io"
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/elasticsearch"
   },
   "slug": "elasticsearch",
   "variables": {

@@ -1,6 +1,6 @@
     {{ container_name }}:
         container_name: {{ container_name }}
-        image: mongo:latest
+        image: mongo
         restart: 'on-failure'
         environment:
             MONGODB_USER: {{ user }}

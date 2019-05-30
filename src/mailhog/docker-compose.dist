@@ -1,6 +1,6 @@
     {{ container_name }}:
         container_name: {{ container_name }}
-        image: mailhog/mailhog:latest
+        image: mailhog/mailhog
         restart: 'on-failure'
         ports:
             - {{ smtp_server_port }}:1025
