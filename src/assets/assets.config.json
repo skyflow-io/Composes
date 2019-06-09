@@ -24,7 +24,22 @@
     }
   ],
   "events": {
-    "add": "events/AddEvent",
-    "update": "events/UpdateEvent"
+    "after_add": {
+      "rm": ["events", "entry.js", "app.js"]
+    },
+    "after_update": {
+      "exec": [
+        "mkdir -p {{ assets_directory }}/{{ config:scripts.directory }}",
+        "mkdir -p {{ assets_directory }}/{{ config:styles.directory }}",
+        "mkdir -p {{ assets_directory }}/{{ config:widgets.directory }}",
+        "mkdir -p {{ assets_directory }}/{{ config:fonts.directory }}",
+        "mkdir -p {{ assets_directory }}/components",
+        "mkdir -p {{ assets_directory }}/containers"
+      ],
+      "cache_cp": [
+        {"entry":  "entry.js", "output":  "{{ assets_directory }}/entry.js"},
+        {"entry":  "app.js", "output":  "{{ assets_directory }}/app.js"}
+      ]
+    }
   }
 }

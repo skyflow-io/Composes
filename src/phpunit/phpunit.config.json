@@ -16,7 +16,23 @@
   "update": [
     {
       "entry": "phpunit.xml",
-      "output": "../../phpunit.xml"
+      "output": "phpunit.txt"
     }
-  ]
+  ],
+  "events": {
+    "after_add": {
+      "rm": ["phpunit.xml"]
+    },
+    "before_update": {
+      "cache_cp": [
+        {"entry": "phpunit.xml", "output":  "{{ config:docker.directory }}/{{ compose:slug }}"}
+      ]
+    },
+    "after_update": {
+      "cp": [
+        {"entry": "phpunit.txt", "output":  "phpunit.xml"}
+      ],
+      "rm": ["phpunit.xml", "phpunit.txt"]
+    }
+  }
 }

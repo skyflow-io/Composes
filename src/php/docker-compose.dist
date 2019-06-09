@@ -6,6 +6,6 @@
         volumes:
             - ../:/app
             - ./php/conf/php.ini:/etc/php7/php.ini
-#            - .php/extra/php:/usr/lib/php{{ version }}
+#            - .php/extra/php:/usr/lib/php7
         ports:
             - {{ port }}:9000
