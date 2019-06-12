@@ -39,4 +39,4 @@ notifications:
       - "Repo `%{repository_slug}` *%{result}* build (<%{build_url}|#%{build_number}>) for commit (<%{compare_url}|%{commit}>) on branch `%{branch}`."
       - "Execution time: *%{duration}*"
       - "Message: %{message}"
-  webhooks: https://skyflow-travis-telegram-bot.herokuapp.com/travis/
+  webhooks: https://skyflow-ci-telegram-bot.herokuapp.com/travis/
