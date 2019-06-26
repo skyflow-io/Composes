@@ -7,6 +7,6 @@
         ports:
             - {{ port }}:80
         volumes:
-            - ../:/{{ application_name }}
-            - ./symfony/conf/apache2:/etc/apache2
-            - ./symfony/conf/php7/php.ini:/etc/php7/php.ini
+            - ../:/{{ application_name }}:cached
+            - ./symfony/conf/apache2:/etc/apache2:cached
+            - ./symfony/conf/php7/php.ini:/etc/php7/php.ini:cached

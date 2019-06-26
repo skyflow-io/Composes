@@ -7,6 +7,6 @@
         ports:
             - {{ port }}:80
         volumes:
-            - ../:/{{ application_name }}
-            - ./laravel/conf/apache2:/etc/apache2
-            - ./laravel/conf/php7/php.ini:/etc/php7/php.ini
+            - ../:/{{ application_name }}:cached
+            - ./laravel/conf/apache2:/etc/apache2:cached
+            - ./laravel/conf/php7/php.ini:/etc/php7/php.ini:cached

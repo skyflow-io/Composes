@@ -24,6 +24,7 @@ deploy:
       rsync -r --delete-after $TRAVIS_BUILD_DIR/doc/composes.json lewebpedagogique@51.15.187.88:/srv/http/skyflow/doc/composes.json &&
       rsync -r --delete-after $TRAVIS_BUILD_DIR/data/composes.json lewebpedagogique@51.15.187.88:/srv/http/skyflow/data/composes.json &&
       rsync -av $TRAVIS_BUILD_DIR/public/images/*.png lewebpedagogique@51.15.187.88:/srv/http/skyflow/images/composes &&
+      ssh lewebpedagogique@51.15.187.88 docker restart skyflow_master &&
       ssh lewebpedagogique@51.15.187.88 docker restart skyflow_develop
     on:
       branch: master
