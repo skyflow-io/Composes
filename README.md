@@ -13,7 +13,7 @@
 <h1 align="center">Skyflow Composes</h1>
 
 <p align="center">
-    <img width="200" src="https://skyflow.io/images/homepage/build-environment.svg" alt="Build your environment">
+    <img width="700" src="https://skyflow.io/images/homepage/build-environment.svg" alt="Build your environment">
 </p>
 
 In a project, several tools are needed. A database to store the data, an email server to test the sending of e-mails or a web server. Skyflow allows you to build your environment via [composes][docs-website-url]. 
