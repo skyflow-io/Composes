@@ -1,6 +1,6 @@
-<div style="text-align: center">
+<div align="center">
     <a href="https://skyflow.io">
-        <img style="width: 200px" src="https://skyflow.io/logos/skyflow/skyflow-primary.svg">
+        <img width="200" src="https://skyflow.io/logos/skyflow/skyflow-primary.svg">
     </a>
     <br>
     <br>
@@ -10,10 +10,10 @@
 [![Join the chat](https://skyflow.io/badges/skyflow/slack.svg)][slack-url]
 </div>
 
-<h1 style="text-align: center">Skyflow Composes</h1>
+<h1 align="center">Skyflow Composes</h1>
 
-<p style="text-align: center">
-    <img style="width: 400px" src="https://skyflow.io/images/homepage/build-environment.svg" alt="Build your environment">
+<p align="center">
+    <img width="200" src="https://skyflow.io/images/homepage/build-environment.svg" alt="Build your environment">
 </p>
 
 In a project, several tools are needed. A database to store the data, an email server to test the sending of e-mails or a web server. Skyflow allows you to build your environment via [composes][docs-website-url]. 
