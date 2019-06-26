@@ -12,6 +12,8 @@
 
 <h1 align="center">Skyflow Composes</h1>
 
+![Build your environment](https://skyflow.io/images/homepage/build-environment.svg)
+
 In a project, several tools are needed. A database to store the data, an email server to test the sending of e-mails or a web server. Skyflow allows you to build your environment via <span style="color: #33CCCC">[composes][docs-website-url]</span>. 
 
 ## Documentation
