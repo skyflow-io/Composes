@@ -1,0 +1,30 @@
+{
+  "name": "composes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "coveralls": "^3.0.4",
+    "jest": "^24.8.0",
+    "jsonfile": "^5.0.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyflow-io/Composes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skyflow-io/Composes/issues"
+  },
+  "homepage": "https://github.com/skyflow-io/Composes#readme"
+}
