@@ -6,6 +6,7 @@
     <br>
 
 [![Build Status](https://travis-ci.org/skyflow-io/Composes.svg?branch=master)](https://travis-ci.org/skyflow-io/Composes)
+[![Coverage Status](https://coveralls.io/repos/github/skyflow-io/Composes/badge.svg?branch=master)](https://coveralls.io/github/skyflow-io/Composes?branch=master)
 [![Skyflow website](https://skyflow.io/badges/skyflow/site.svg)][docs-website-url]
 [![Join the chat](https://skyflow.io/badges/skyflow/slack.svg)][slack-url]
 </div>
