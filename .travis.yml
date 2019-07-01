@@ -22,7 +22,6 @@ matrix:
         - provider: script
           skip_cleanup: true
           script:
-            mkdir -p tests
             ssh lewebpedagogique@51.15.187.88 mkdir -p /srv/http/skyflow/data /srv/http/skyflow/doc /srv/http/skyflow/images &&
             rsync -r --delete-after $TRAVIS_BUILD_DIR/doc/composes.json lewebpedagogique@51.15.187.88:/srv/http/skyflow/doc/composes.json &&
             rsync -r --delete-after $TRAVIS_BUILD_DIR/data/composes.json lewebpedagogique@51.15.187.88:/srv/http/skyflow/data/composes.json &&
