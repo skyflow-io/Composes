@@ -35,7 +35,7 @@ matrix:
       node_js:
         - node
       script:
-        - node ./ci/build.js && npm run test:coveralls
+        - npm run test:coveralls
 notifications:
   email: false
   slack:
