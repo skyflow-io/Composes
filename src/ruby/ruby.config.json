@@ -1,0 +1,20 @@
+{
+  "name": "Ruby",
+  "description": "Ruby is a dynamic, reflective, object-oriented, general-purpose, open-source programming language.",
+  "author": {
+    "name": "Skyflow",
+    "site": "https:\/\/skyflow.io\/docs\/composes\/ruby",
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/ruby"
+  },
+  "slug": "ruby",
+  "variables": {
+    "application_name": {
+      "description": "Application name",
+      "value": "app"
+    },
+    "entry_point": {
+      "description": "Entry point",
+      "value": "index.rb"
+    }
+  }
+}
