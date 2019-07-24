@@ -1,0 +1,7 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        image: ruby:2.6.3-alpine3.10
+        working_dir: /{{ application_name }}
+        volumes:
+            - ../:/{{ application_name }}
+        command: "ruby {{ entry_point }}"
