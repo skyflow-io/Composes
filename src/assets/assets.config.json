@@ -25,7 +25,7 @@
   ],
   "events": {
     "after_add": {
-      "rm": ["events", "entry.js", "app.js"]
+      "rm": ["entry.js", "app.js"]
     },
     "after_update": {
       "exec": [
