@@ -1,6 +1,6 @@
 FROM node:alpine
 
-LABEL maintainer="Skyflow - stephanyan <rabena.stephane@gmail.com>"
+LABEL maintainer="Skyflow - stephanyan"
 
 WORKDIR /app
 RUN npm init -y

@@ -1,6 +1,6 @@
 FROM node:alpine
 
-LABEL maintainer="Skyflow - Franck DIOMANDE <fkdiomande@gmail.com>"
+LABEL maintainer="Skyflow - Franck"
 WORKDIR /src
 
 # See http://yui.github.io/yuidoc/

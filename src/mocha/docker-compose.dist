@@ -3,5 +3,5 @@
         build: ./mocha
         image: skyflow/mocha
         volumes:
-            - ../{{ application_dir }}:/node
+            - ../{{ application_dir }}:/app
         command: ["mocha"]
