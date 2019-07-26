@@ -1,0 +1,41 @@
+{
+  "name": "Jest",
+  "description": "Jest is a delightful JavaScript Testing Framework with a focus on simplicity. It works with projects using: Babel, TypeScript, Node, React, Angular, Vue and more!",
+  "author": {
+    "name": "Skyflow",
+    "site": "https:\/\/skyflow.io",
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/jest"
+  },
+  "slug": "jest",
+  "variables": {
+    "application_dir": {
+      "description": "Application directory",
+      "value": "./"
+    }
+  },
+  "events": {
+    "after_add": {
+      "rm": ["sum.test.js"]
+    },
+    "after_update": {
+      "exec": [
+        "mkdir -p {{ application_dir }}/tests"
+      ],
+      "cp": [
+        {
+          "entry": "Dockerfile.dist",
+          "output": "{{ config:docker.directory }}/jest/Dockerfile"
+        }
+      ],
+      "cache_cp": [
+        {
+          "entry": "sum.test.js",
+          "output": "{{ application_dir }}/tests/sum.test.js"
+        }
+      ]
+    }
+  },
+  "usage": [
+    "skyflow run jest"
+  ]
+}
