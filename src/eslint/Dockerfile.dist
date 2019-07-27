@@ -1,10 +1,4 @@
 FROM node:alpine
-
 LABEL maintainer="Skyflow - stephanyan"
-
-WORKDIR /app
-RUN npm init -y
 # See https://eslint.org/docs/user-guide/getting-started
-RUN yarn global add eslint
-RUN yarn global add eslint-config-airbnb-base
-RUN yarn global add eslint-plugin-import
+RUN npm install eslint eslint-config-airbnb-base eslint-plugin-import -g

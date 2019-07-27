@@ -13,14 +13,20 @@
       "value": "src"
     }
   },
-  "update": [
-    {
-      "entry": "Dockerfile.dist",
-      "output": "Dockerfile"
-    },
-    {
-      "entry": "eslintrc.js",
-      "output": ".eslintrc.js"
+  "events": {
+    "after_update": {
+      "cp": [
+        {
+          "entry": "Dockerfile.dist",
+          "output": "{{ config:docker.directory }}/eslint/Dockerfile"
+        }
+      ]
     }
+  },
+  "command": {
+    "default": "'eslint .'"
+  },
+  "usage": [
+    "skyflow run eslint"
   ]
 }
