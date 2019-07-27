@@ -45,6 +45,9 @@ foreach ($composeFinder as $compose) {
     $result[] = $files;
 }
 
+$fileSystem->remove(['/app/data/composes.js', '/app/doc/composes.js']);
 $fileSystem->remove(['/app/data/composes.json', '/app/doc/composes.json']);
+$fileSystem->dumpFile('/app/data/composes.js', 'var COMPOSES_DATA = ' . json_encode($result) . ';');
 $fileSystem->dumpFile('/app/data/composes.json', json_encode($result));
+$fileSystem->dumpFile('/app/doc/composes.js', 'var COMPOSES_DOC = ' . json_encode($docResult) . ';');
 $fileSystem->dumpFile('/app/doc/composes.json', json_encode($docResult));
