@@ -10,11 +10,26 @@
   "variables": {
     "plugins": {
       "description": "Define your plugins",
-      "value": "tables-filter tinymce"
+      "value": "tables-filter tinymce",
+      "type": "checkbox",
+      "choices": [
+        "tables-filter tinymce table-structure",
+        " database-hide", "designs", "dump-alter", "dump-bz2", "dump-date", "dump-json", "dump-php", "dump-xml",
+        "dump-zip", "edit-calendar", "edit-foreign", "edit-textarea", "email-table", "enum-option", "enum-types",
+        "file-upload", "json-column", "plugin", "pretty-json-column", "readme", "slugify", "sql-log", "struct-comments",
+        "table-indexes-structure", "table-structure", "tables-filter", "tinymce", "translation", "version-noverify",
+        "wymeditor"
+      ]
     },
     "design": {
       "description": "Application design",
-      "value": "pepa-linha"
+      "value": "pepa-linha",
+      "type": "list",
+      "choices": [
+        "pepa-linha", "brade", "bueltge", "cvicebni-ubor", "esterka", "flat", "galkaev", "haeckel", "hever", "jukin",
+        "kahi", "konya", "lucas-sandery", "mancave", "mvt", "nette", "ng9", "nicu", "pappu687", "paranoiq", "pilot",
+        "pokorny", "price", "rmsoft", "rmsoft_blue"
+      ]
     },
     "port": {
       "description": "Application port",

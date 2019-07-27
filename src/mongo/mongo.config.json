@@ -18,7 +18,8 @@
     },
     "password": {
       "description": "Database password",
-      "value": "root"
+      "value": "root",
+      "type": "password"
     },
     "port": {
       "description": "Application port",
