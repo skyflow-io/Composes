@@ -1,4 +1,4 @@
-FROM {{ version }}
+FROM alpine:{{ version }}
 
 LABEL maintainer="Skyflow - Franck"
 

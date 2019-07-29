@@ -10,10 +10,10 @@
   "variables": {
     "version": {
       "description": "Choose your image version",
-      "value": "alpine",
+      "value": "latest",
       "type": "list",
       "choices": [
-        "alpine"
+        "latest"
       ]
     },
     "application_name": {

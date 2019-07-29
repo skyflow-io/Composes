@@ -4,7 +4,7 @@
   "author": {
     "name": "Skyflow",
     "site": "https:\/\/skyflow.io",
-    "github": "https://github.com/skyflow-io/Composes/tree/master/src/adminer"
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/php"
   },
   "slug": "php",
   "variables": {
