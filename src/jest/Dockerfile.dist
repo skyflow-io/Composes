@@ -1,0 +1,3 @@
+FROM node:alpine
+LABEL maintainer="Skyflow - Franck"
+RUN npm install -g jest

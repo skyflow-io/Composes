@@ -10,7 +10,8 @@
   "variables": {
     "password": {
       "description": "Environment password",
-      "value": "root"
+      "value": "root",
+      "type": "password"
     },
     "port": {
       "description": "Application port",

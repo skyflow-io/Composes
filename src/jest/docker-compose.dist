@@ -1,0 +1,8 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        build: ./jest
+        image: skyflow/jest
+        working_dir: /app
+        volumes:
+            - ./jest/jest.config.js:/app/jest.config.js
+            - ../{{ application_dir }}:/app

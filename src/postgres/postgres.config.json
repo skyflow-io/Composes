@@ -18,7 +18,8 @@
     },
     "password": {
       "description": "Database password",
-      "value": "root"
+      "value": "root",
+      "type": "password"
     },
     "database_storage_location": {
       "description": "Database storage location. Relative to the current directory.",

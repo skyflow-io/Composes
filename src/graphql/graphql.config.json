@@ -21,8 +21,10 @@
       "value": "graphql"
     },
     "env": {
-      "description": "Node environment. Set 'dev' or 'prod'",
-      "value": "dev"
+      "description": "Node environment.",
+      "value": "dev",
+      "type": "list",
+      "choices": ["dev", "prod"]
     }
   },
   "update": [

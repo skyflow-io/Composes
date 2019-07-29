@@ -8,7 +8,7 @@
     "watch": "./node_modules/.bin/webpack --mode=development --config=webpack/webpack.config.dev.js --watch"
   },
   "keywords": [],
-  "author": "Skyflow",
+  "author": "Skyflow - Franck",
   "license": "Apache-2.0",
   "dependencies": {
     "@babel/core": "^7.1.2",
