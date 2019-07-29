@@ -1,6 +1,6 @@
     {{ container_name }}:
         container_name: {{ container_name }}
-        image: node:alpine
+        image: node:{{ version }}
         user: "node"
         working_dir: /node
         volumes:

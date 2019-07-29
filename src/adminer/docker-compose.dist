@@ -1,6 +1,6 @@
     {{ container_name }}:
         container_name: {{ container_name }}
-        image: adminer
+        image: adminer:{{ version }}
         restart: 'on-failure'
         environment:
             ADMINER_PLUGINS: {{ plugins }}

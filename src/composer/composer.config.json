@@ -8,6 +8,14 @@
   },
   "slug": "composer",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest", "1.8.6", "1.8", "1.7.3", "1.7", "1"
+      ]
+    },
     "application_dir": {
       "description": "Application directory. Relative to the current directory.",
       "value": "./"

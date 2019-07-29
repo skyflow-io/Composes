@@ -1,5 +1,5 @@
     {{ container_name }}:
         container_name: {{ container_name }}
-        image: kahlan/kahlan:alpine
+        image: kahlan/kahlan:{{ version }}
         volumes:
             - ../{{ application_dir }}:/app

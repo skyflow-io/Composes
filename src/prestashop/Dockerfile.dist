@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:{{ version }}
 
 LABEL maintainer="Skyflow - Franck"
 
@@ -26,4 +26,3 @@ RUN rm -rf /var/cache/apk/*
 
 ENTRYPOINT ["httpd"]
 CMD ["-D", "FOREGROUND"]
-

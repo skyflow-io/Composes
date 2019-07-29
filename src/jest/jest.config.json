@@ -8,6 +8,14 @@
   },
   "slug": "jest",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest", "alpine", "stretch", "slim"
+      ]
+    },
     "application_dir": {
       "description": "Application directory",
       "value": "./"
@@ -40,5 +48,11 @@
   },
   "usage": [
     "skyflow run jest"
+  ],
+  "update": [
+    {
+      "entry": "Dockerfile.dist",
+      "output": "Dockerfile"
+    }
   ]
 }

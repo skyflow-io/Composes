@@ -1,6 +1,6 @@
     {{ container_name }}:
         container_name: {{ container_name }}
-        image: php:7.2-fpm-alpine
+        image: php:{{ version }}
         restart: 'on-failure'
         working_dir: /app
         volumes:

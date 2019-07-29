@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:{{ version }}
 LABEL maintainer="Skyflow - Franck"
 WORKDIR /graphql
 RUN npm init -y

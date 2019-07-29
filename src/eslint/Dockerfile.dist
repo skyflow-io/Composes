@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:{{ version }}
 LABEL maintainer="Skyflow - stephanyan"
 # See https://eslint.org/docs/user-guide/getting-started
 RUN npm install eslint eslint-config-airbnb-base eslint-plugin-import -g

@@ -4,10 +4,18 @@
   "author": {
     "name": "Skyflow",
     "site": "https:\/\/skyflow.io",
-    "github": "https://github.com/skyflow-io/Composes/tree/master/src/adminer"
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/postgres"
   },
   "slug": "postgres",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest", "alpine", "9.6.14", "9.6", "9"
+      ]
+    },
     "database_name": {
       "description": "Database name",
       "value": "skyflow"

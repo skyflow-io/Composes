@@ -8,6 +8,14 @@
   },
   "slug": "laravel",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest", "edge", "3.10.1", "3.10", "3.9.4", "3.9"
+      ]
+    },
     "application_name": {
       "description": "Application name",
       "value": "laravel_app"

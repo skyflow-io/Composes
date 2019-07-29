@@ -1,6 +1,6 @@
     {{ container_name }}:
         container_name: {{ container_name }}
-        image: httpd:alpine
+        image: httpd:{{ version }}
         restart: 'on-failure'
         ports:
             - {{ port }}:80

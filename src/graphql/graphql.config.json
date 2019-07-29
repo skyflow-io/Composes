@@ -8,6 +8,14 @@
   },
   "slug": "graphql",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest", "alpine", "stretch", "slim"
+      ]
+    },
     "host": {
       "description": "Host name",
       "value": "localhost"
