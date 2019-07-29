@@ -1,0 +1,20 @@
+{
+  "name": "Alpine",
+  "description": "A minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size!",
+  "author": {
+    "name": "Skyflow",
+    "site": "https:\/\/skyflow.io",
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/alpine"
+  },
+  "slug": "alpine",
+  "variables": {
+    "version": {
+      "description": "Image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+          "latest", "3.10.", "3.10.1", "edge", "3.9"
+      ]
+    }
+  }
+}

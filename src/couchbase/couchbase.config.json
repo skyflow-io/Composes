@@ -27,6 +27,9 @@
     "database_storage_location": {
       "description": "Database storage location",
       "value": "./skyflow/database/couchbase"
-    }
+    },
+    "usage": [
+      "skyflow up couchbase"
+    ]
   }
 }
