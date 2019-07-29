@@ -1,0 +1,8 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        image: couchbase:{{ version }}
+        ports:
+            - {{ application_port }}:8091-8094
+            - {{ database_port }}:11210
+        volumes:
+            - ../{{ database_storage_location }}:/opt/couchbase/var
