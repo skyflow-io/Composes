@@ -8,6 +8,14 @@
   },
   "slug": "mariadb",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest", "bionic", "10.4.6-bionic", "10.4.6", "10.4-bionic", "10.4"
+      ]
+    },
     "database_name": {
       "description": "Database name",
       "value": "skyflow"

@@ -8,6 +8,14 @@
   },
   "slug": "apache",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest", "alpine", "2.4.39-alpine", "2.4.39", "2.4-alpine", "2.4", "2-alpine", "2"
+      ]
+    },
     "port": {
       "description": "Application port",
       "value": "80"

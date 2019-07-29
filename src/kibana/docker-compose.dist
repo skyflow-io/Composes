@@ -2,7 +2,7 @@
         container_name: {{ container_name }}
         # see https://www.docker.elastic.co/
         # see https://www.elastic.co/guide/en/kibana/6.6/docker.html
-        image: docker.elastic.co/kibana/kibana:6.6.2
+        image: docker.elastic.co/kibana/kibana:{{ version }}
         restart: 'on-failure'
         environment:
             ELASTICSEARCH_URL: http://{{ elasticsearch:container_name }}:9200

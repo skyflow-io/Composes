@@ -8,6 +8,14 @@
   },
   "slug": "caddy",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest", "no-stats", "php-no-stats", "php", "builder", "1.0.1-php-no-stats"
+      ]
+    },
     "port": {
       "description": "Application port",
       "value": "2015"

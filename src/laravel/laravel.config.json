@@ -8,6 +8,14 @@
   },
   "slug": "laravel",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "alpine",
+      "type": "list",
+      "choices": [
+        "alpine"
+      ]
+    },
     "application_name": {
       "description": "Application name",
       "value": "laravel_app"

@@ -8,6 +8,14 @@
   },
   "slug": "mongo",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest", "4.1.13", "4.1", "4"
+      ]
+    },
     "database_name": {
       "description": "Database name",
       "value": "skyflow"

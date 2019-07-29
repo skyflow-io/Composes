@@ -8,6 +8,14 @@
   },
   "slug": "redis",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest", "alpine"
+      ]
+    },
     "database_storage_location": {
       "description": "Database storage location. Relative to the current directory.",
       "value": "./skyflow/database/redis"

@@ -8,6 +8,14 @@
   },
   "slug": "eslint",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "alpine",
+      "type": "list",
+      "choices": [
+        "alpine"
+      ]
+    },
     "application_dir": {
       "description": "Application directory. Relative to the current directory.",
       "value": "src"
@@ -28,5 +36,11 @@
   },
   "usage": [
     "skyflow run eslint"
+  ],
+  "update": [
+    {
+      "entry": "Dockerfile.dist",
+      "output": "Dockerfile"
+    }
   ]
 }

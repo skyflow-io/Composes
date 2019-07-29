@@ -8,9 +8,18 @@
   },
   "slug": "memcached",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest", "1.5.16", "1.5", "1", "alpine", "1.5.16-alpine", "1.5-alpine", "1-alpine"
+      ]
+    },
     "port": {
       "description": "Application port",
       "value": "11211"
     }
   }
 }
+

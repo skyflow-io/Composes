@@ -8,6 +8,14 @@
   },
   "slug": "node",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest", "alpine", "stretch", "slim"
+      ]
+    },
     "application_dir": {
       "description": "Application directory. Relative to the current directory.",
       "value": "./"

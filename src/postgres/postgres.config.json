@@ -8,6 +8,14 @@
   },
   "slug": "postgres",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest", "alpine", "9.6.14", "9.6", "9"
+      ]
+    },
     "database_name": {
       "description": "Database name",
       "value": "skyflow"

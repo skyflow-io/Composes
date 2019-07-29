@@ -8,6 +8,14 @@
   },
   "slug": "php",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "7.3-alpine",
+      "type": "list",
+      "choices": [
+        "7.3-alpine", "7.2-alpine","7.1-alpine"
+      ]
+    },
     "port": {
       "description": "Application port",
       "value": "9000"

@@ -9,6 +9,14 @@
   },
   "slug": "mailhog",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest"
+      ]
+    },
     "smtp_server_port": {
       "description": "Smtp server port",
       "value": "1025"

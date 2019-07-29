@@ -8,6 +8,14 @@
   },
   "slug": "prestashop",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest", "1.7.6", "1.7"
+      ]
+    },
     "application_name": {
       "description": "Application name",
       "value": "prestashop_app"

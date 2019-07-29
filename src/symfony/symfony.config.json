@@ -8,6 +8,14 @@
   },
   "slug": "symfony",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "alpine",
+      "type": "list",
+      "choices": [
+        "alpine"
+      ]
+    },
     "application_name": {
       "description": "Application name",
       "value": "symfony_app"

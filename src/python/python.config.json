@@ -8,6 +8,14 @@
   },
   "slug": "python",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest", "alpine"
+      ]
+    },
     "application_name": {
       "description": "Application name",
       "value": "app"

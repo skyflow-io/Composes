@@ -8,6 +8,14 @@
   },
   "slug": "phpunit",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest"
+      ]
+    },
     "tests_dir": {
       "description": "Tests directory. Relative to the current directory.",
       "value": "./tests"

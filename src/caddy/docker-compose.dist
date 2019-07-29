@@ -1,6 +1,6 @@
     {{ container_name }}:
         container_name: {{ container_name }}
-        image: abiosoft/caddy
+        image: abiosoft/caddy:{{ version }}
         ports:
           - {{ port }}:2015
         volumes:

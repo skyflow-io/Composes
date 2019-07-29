@@ -1,6 +1,6 @@
     {{ container_name }}:
         container_name: {{ container_name }}
-        image: python:3.7.0-alpine3.7
+        image: python:{{ version }}
         working_dir: /{{ application_name }}
         volumes:
             - ../:/{{ application_name }}

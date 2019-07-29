@@ -8,6 +8,14 @@
   },
   "slug": "adminer",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+        "latest", "standalone", "fastcgi", "4.7.2-standalone", "4.7.2-fastcgi", "4.7.2"
+      ]
+    },
     "plugins": {
       "description": "Define your plugins",
       "value": "tables-filter tinymce",

@@ -8,6 +8,14 @@
   },
   "slug": "kahlan",
   "variables": {
+    "version": {
+      "description": "Choose your image version",
+      "value": "alpine",
+      "type": "list",
+      "choices": [
+        "alpine", "php5", "4-php5", "4.5-php5", "4.5.0-php5"
+      ]
+    },
     "application_dir": {
       "description": "Application directory. Relative to the current directory.",
       "value": "./"
