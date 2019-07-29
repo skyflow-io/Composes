@@ -2,7 +2,7 @@
 name: "\U0001F680 Feature request"
 about: Suggest an idea for this project
 title: "[FEATURE]"
-labels: To Be Treated
+labels: ''
 assignees: ''
 
 ---
