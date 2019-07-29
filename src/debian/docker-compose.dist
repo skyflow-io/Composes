@@ -1,0 +1,3 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        image: debian:{{ version }}

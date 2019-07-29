@@ -1,0 +1,20 @@
+{
+  "name": "Debian",
+  "description": "Debian is a Linux distribution that's composed entirely of free and open-source software.",
+  "author": {
+    "name": "Skyflow",
+    "site": "https:\/\/skyflow.io",
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/debian"
+  },
+  "slug": "debian",
+  "variables": {
+    "version": {
+      "description": "Image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+          "latest", "oldstable", "oldoldstable-slim", "jessie", "experimental", "buster"
+      ]
+    }
+  }
+}
