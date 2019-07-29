@@ -1,0 +1,24 @@
+{
+  "name": "Registry",
+  "description": "The Docker Registry 2.0 implementation for storing and distributing Docker images.",
+  "author": {
+    "name": "Skyflow",
+    "site": "https:\/\/skyflow.io",
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/registry"
+  },
+  "slug": "registry",
+  "variables": {
+    "version": {
+      "description": "Image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+          "latest", "2.7.1", "2.7", "2.6", "2.6.2"
+      ]
+    },
+    "application_port": {
+      "description": "Application port",
+      "value": "5000"
+    }
+  }
+}
