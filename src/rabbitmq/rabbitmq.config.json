@@ -1,0 +1,20 @@
+{
+  "name": "Rabbitmq",
+  "description": "RabbitMQ is an open source multi-protocol messaging broker.",
+  "author": {
+    "name": "Skyflow",
+    "site": "https:\/\/skyflow.io",
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/rabbitmq"
+  },
+  "slug": "rabbitmq",
+  "variables": {
+    "version": {
+      "description": "Image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+          "latest", "management-alpine", "management", "alpine"
+      ]
+    }
+  }
+}
