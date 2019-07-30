@@ -1,0 +1,24 @@
+{
+  "name": "Tomcat",
+  "description": "Apache Tomcat is an open source implementation of the Java Servlet and JavaServer Pages technologies.",
+  "author": {
+    "name": "Skyflow",
+    "site": "https:\/\/skyflow.io",
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/tomcat"
+  },
+  "slug": "tomcat",
+  "variables": {
+    "version": {
+      "description": "Image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+          "latest", "9.0-jdk13-openjdk-oracle", "9-jdk8-adoptopenjdk-hotspot", "8.5.43-jdk13-openjdk-oracle", "8.5-jdk8-adoptopenjdk-hotspot"
+      ]
+    },
+    "port": {
+      "description": "Application port",
+      "value": "8888"
+    }
+  }
+}
