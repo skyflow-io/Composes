@@ -1,0 +1,5 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        image: tomcat:{{ version }}
+        ports:
+            - {{ port }}:8080
