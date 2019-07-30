@@ -1,0 +1,20 @@
+{
+  "name": "Maven",
+  "description": "Apache Maven is a software project management and comprehension tool.",
+  "author": {
+    "name": "Skyflow",
+    "site": "https:\/\/skyflow.io",
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/maven"
+  },
+  "slug": "maven",
+  "variables": {
+    "version": {
+      "description": "Image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+          "latest", "3.6-jdk-13", "slim", "3-ibmjava-8"
+      ]
+    }
+  }
+}
