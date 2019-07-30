@@ -1,0 +1,20 @@
+{
+  "name": "Openjdk",
+  "description": "OpenJDK is an open-source implementation of the Java Platform, Standard Edition.",
+  "author": {
+    "name": "Skyflow",
+    "site": "https:\/\/skyflow.io",
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/openjdk"
+  },
+  "slug": "openjdk",
+  "variables": {
+    "version": {
+      "description": "Image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+          "latest", "13-ea-jdk", "13-ea-jdk-windowsservercore", "14-windowsservercore", "14-oracle"
+      ]
+    }
+  }
+}
