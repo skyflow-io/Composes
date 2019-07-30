@@ -1,0 +1,24 @@
+{
+  "name": "Haproxy",
+  "description": "HAProxy - The Reliable, High Performance TCP/HTTP Load Balancer.",
+  "author": {
+    "name": "Skyflow",
+    "site": "https:\/\/skyflow.io",
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/haproxy"
+  },
+  "slug": "haproxy",
+  "variables": {
+    "version": {
+      "description": "Image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+          "latest", "alpine", "2.0", "1.9"
+      ]
+    },
+    "application_port": {
+      "description": "Application port",
+      "value": "8080"
+    }
+  }
+}
