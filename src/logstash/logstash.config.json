@@ -1,0 +1,20 @@
+{
+  "name": "Logstash",
+  "description": "Logstash is a tool for managing events and logs.",
+  "author": {
+    "name": "Skyflow",
+    "site": "https:\/\/skyflow.io",
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/logstash"
+  },
+  "slug": "logstash",
+  "variables": {
+    "version": {
+      "description": "Image version",
+      "value": "7.2.0",
+      "type": "list",
+      "choices": [
+          "7.2.0", "7.1.1", "6.8.1", "6.8.0"
+      ]
+    }
+  }
+}
