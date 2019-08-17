@@ -10,7 +10,7 @@
   "variables": {
     "assets_directory": {
       "description": "Assets directory. Relative to the current directory.",
-      "value": "assets"
+      "value": "{{ config:assets.directory }}"
     },
     "output_directory": {
       "description": "Output directory. Relative to the current directory.",
@@ -29,6 +29,7 @@
     },
     "after_update": {
       "exec": [
+        "mkdir -p {{ assets_directory }}",
         "mkdir -p {{ assets_directory }}/{{ config:scripts.directory }}",
         "mkdir -p {{ assets_directory }}/{{ config:styles.directory }}",
         "mkdir -p {{ assets_directory }}/{{ config:widgets.directory }}",
