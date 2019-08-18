@@ -1,0 +1,24 @@
+{
+  "name": "Sonarqube",
+  "description": "SonarQube is an open source platform for continuous inspection of code quality.",
+  "author": {
+    "name": "Skyflow",
+    "site": "https:\/\/skyflow.io",
+    "github": "https://github.com/skyflow-io/Composes/tree/master/src/sonarqube"
+  },
+  "slug": "sonarqube",
+  "variables": {
+    "version": {
+      "description": "Image version",
+      "value": "latest",
+      "type": "list",
+      "choices": [
+          "latest", "its", "7.9-community", "7.8-community"
+      ]
+    },
+    "port": {
+      "description": "Application port",
+      "value": "9000"
+    }
+  }
+}

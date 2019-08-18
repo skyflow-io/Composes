@@ -1,0 +1,5 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        image: sonarqube:{{ version }}
+        ports:
+            - {{ port }}:9000
