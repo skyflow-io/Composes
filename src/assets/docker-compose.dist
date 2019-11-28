@@ -1,7 +1,7 @@
     {{ container_name }}:
         container_name: {{ container_name }}
-        build: ./assets
-        image: skyflow/assets
+        image: node:10-alpine
+        working_dir: /home/node/src
         volumes:
-            - ../{{ assets_directory }}:/assets/src
-            - ../{{ output_directory }}:/assets/out
+            - ../{{ assets_directory }}:/home/node/src
+            - ../{{ output_directory }}:/home/node/out

@@ -6,7 +6,7 @@ const path = require('path'), resolve = path.resolve,
 
 let entries = {};
 try{
-    entries = require(resolve(__dirname, '..', 'src', 'entry.js'));
+    entries = require(resolve(__dirname, '..', 'entry.js'));
 }catch (e){
     console.error('Entry file not found.');
     process.exit(1);
@@ -17,14 +17,14 @@ if(!keys[0]){
     process.exit(0);
 }
 keys.map((entry)=>{
-    entries[entry] = resolve(__dirname, '..', 'src', entries[entry]);
+    entries[entry] = resolve(__dirname, '..', entries[entry]);
 });
 
 module.exports = {
     entry: entries,
     output: {
         filename: '[name].js',
-        path: resolve(__dirname, '..', 'out'),
+        path: '/home/node/out',
     },
     optimization: {
         minimizer: [
