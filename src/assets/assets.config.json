@@ -19,7 +19,7 @@
   },
   "events": {
     "after_add": {
-      "rm": ["webpack", "app.js", "entry.js", "package.json"]
+      "rm": ["webpack", "app.js", "babel.config.js", "entry.js", "jest.config.js" ,"package.json"]
     },
     "after_update": {
       "exec": [
@@ -34,7 +34,9 @@
       "cache_cp": [
         {"entry":  "webpack", "output":  "{{ assets_directory }}/webpack"},
         {"entry":  "app.js", "output":  "{{ assets_directory }}/app.js"},
+        {"entry":  "babel.config.js", "output":  "{{ assets_directory }}/app.js"},
         {"entry":  "entry.js", "output":  "{{ assets_directory }}/entry.js"},
+        {"entry":  "jest.config.js", "output":  "{{ assets_directory }}/entry.js"},
         {"entry":  "package.json", "output":  "{{ assets_directory }}/package.json"}
       ]
     }
